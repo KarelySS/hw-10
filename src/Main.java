@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -28,9 +26,9 @@ public class Main {
         int[] arr1 = generateRandomArray();
         int minSum = 300_000;
         int maxSum = 0;
-        for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] > maxSum) {
-                maxSum = arr1[i];
+        for (int j : arr1) {
+            if (j > maxSum) {
+                maxSum = j;
             }
         }
         for (int e = 0; e < arr.length; e++) {
@@ -44,7 +42,7 @@ public class Main {
         System.out.println("Задача 3");
         int[] arr2 = generateRandomArray();
         int sum2 = 0;
-        for (int salary1 : arr) {
+        for (int salary1 : arr2) {
             sum2 += salary1;
         }
         int averageSalary=sum2/30;
